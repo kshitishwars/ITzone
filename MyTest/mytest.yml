@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadat:
+name: my-testpod
+labels: 
+   env: test
+   server: web
+spec: 
+  contatiners:
+  - name: nginx
+    image: nginx
+    ports: 
+    -containerPort: 80
+
